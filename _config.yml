@@ -22,7 +22,7 @@ url: "http://ramkumar-kr.github.io" # the base hostname & protocol for your site
 twitter_username: ramkumarkr94
 github_username:  ramkumar-kr
 
-highlighter: 'pygments'
+highlighter: 'rouge'
 
 # Build settings
 markdown: kramdown
