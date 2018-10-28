@@ -9,8 +9,7 @@ author: Ramkumar K R
     {% for repo in site.github.public_repositories %}
       <li class="post">
         <span class="post-meta">{{ repo.language }}</span>
-
-          <a class="post-link" href="{{ repo.repository_url }}">
+          <a class="post-link" href="{{ repo.html_url }}">
             <h2>{{ repo.name }}</h2>
           </a>
           <span> {{ repo.description }} </span>
