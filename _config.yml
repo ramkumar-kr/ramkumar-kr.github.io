@@ -33,6 +33,6 @@ collections:
   showcases:
     output: true
 
-gems:
+plugins:
   - jekyll-sitemap
     
