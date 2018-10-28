@@ -7,6 +7,7 @@ author: Ramkumar K R
 
   <ul class="post-list">
     {% for repo in site.github.public_repositories %}
+    {% unless repo.fork %}
       <li class="post">
         <span class="post-meta">{{ repo.language }}</span>
           <a class="post-link" href="{{ repo.html_url }}">
@@ -14,5 +15,23 @@ author: Ramkumar K R
           </a>
           <span> {{ repo.description }} </span>
       </li>
+    {% endunless %}
+    {% endfor %}
+  </ul>
+
+  <h2>Forked projects</h2>
+
+  <ul class="post-list">
+    {% for repo in site.github.public_repositories %}
+    {% if repo.fork %}
+      <li class="post">
+        <span class="post-meta">{{ repo.language }}</span>
+        <span class="post-meta" >{% include octicon-repo-forked.svg %}</span>
+          <a class="post-link" href="{{ repo.html_url }}">
+            <h2>{{ repo.name }}</h2>
+          </a>
+          <span> {{ repo.description }} </span>
+      </li>
+    {% endif %}
     {% endfor %}
   </ul>
