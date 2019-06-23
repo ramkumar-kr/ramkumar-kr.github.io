@@ -2,6 +2,10 @@
 layout: post
 title: Running Rspec in bitbucket pipelines
 author: Ramkumar K R
+tags:
+  - Bitbucket
+  - Pipelines
+  - RSpec
 ---
 Recently, I integrated bitbucket pipelines into the development workflow of my organization. We use the rails framework and rspec to run our tests. 
 

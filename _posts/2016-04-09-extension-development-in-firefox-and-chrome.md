@@ -9,11 +9,10 @@ permalink: /2016/04/09/extension-development-in-firefox-and-chrome/
 original_post_id:
   - 5
   - 5
-categories:
-  - Tech
 tags:
   - Chrome
   - Firefox
+  - Webextensions
 ---
 I developed an extension in both chrome and firefox which provides a new tab page resembling a speed dial. I&#8217;ll just highlight the advantages and disadvantages of development in both the browsers.
 

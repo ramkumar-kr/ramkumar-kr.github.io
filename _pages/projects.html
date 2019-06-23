@@ -5,33 +5,19 @@ permalink: "/projects/"
 author: Ramkumar K R
 ---
 
-  <ul class="post-list">
-    {% for repo in site.github.public_repositories %}
-    {% unless repo.fork %}
-      <li class="post">
-        <span class="post-meta">{{ repo.language }}</span>
-          <a class="post-link" href="{{ repo.html_url }}">
-            <h2>{{ repo.name }}</h2>
-          </a>
-          <span> {{ repo.description }} </span>
-      </li>
-    {% endunless %}
-    {% endfor %}
-  </ul>
+  <div id="showcase">
+    <h1> Showcase </h1>
+    <ul class="post-list">
+      {% for post in site.showcases %}
+        <li class="post">
+          <h2>
+            <a class="post-link" href="{{ post.link }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-meta">{{ post.description }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 
-  <h2>Forked projects</h2>
-
-  <ul class="post-list">
-    {% for repo in site.github.public_repositories %}
-    {% if repo.fork %}
-      <li class="post">
-        <span class="post-meta">{{ repo.language }}</span>
-        <span class="post-meta" >{% include octicon-repo-forked.svg %}</span>
-          <a class="post-link" href="{{ repo.html_url }}">
-            <h2>{{ repo.name }}</h2>
-          </a>
-          <span> {{ repo.description }} </span>
-      </li>
-    {% endif %}
-    {% endfor %}
+  <p>See my complete list of repositories on <a href="https://github.com/ramkumar-kr?tab=repositories">Github</a>.</p>
   </ul>

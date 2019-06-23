@@ -7,9 +7,11 @@ layout: post
 guid: https://blogkrr.wordpress.com/?p=46
 permalink: /2016/06/25/speeding-up-rspec-with-factory_girl/
 categories:
-  - Tech
+  - Programming
 tags:
+  - Ruby
   - RSpec
+  - Factory girl
 ---
 I use `rspec` and `factory_girl` in my organization for writing unit tests. However, it used to be very very slow. I took some steps to speed it up.
 

@@ -1,18 +1,41 @@
 ---
-layout: default
+layout: home
+title: ''
 ---
-<div class="home">
-  <div id="showcase">
-    <h1> Showcase </h1>
-    <ul class="post-list">
-      {% for post in site.showcases %}
-        <li class="post">
-          <h2>
-            <a class="post-link" href="{{ post.link }}">{{ post.title }}</a>
-          </h2>
-          <span class="post-meta">{{ post.description }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+
+<div id="latest-post">
+  <h2>Latest blog post</h2>
+  {%- assign latest_blog = site.posts.first -%}
+  <span class="post-meta">{{ latest_blog.date | date: "%b %-d, %Y" }}</span>
+
+  <h2>
+    <a class="post-link" href="{{ latest_blog.url | prepend: site.baseurl }}">{{ latest_blog.title }}</a>
+  </h2>
+  {% for tags in latest_blog.tags %}
+  <span class="post-meta tag-border">{{ tags }}</span>
+  {% endfor %}
+</div>
+
+
+
+<div id="find-me" class="spaced-div">
+  <h2>Find some of my work here</h2>
+
+  <ul>
+    <li>
+      <a rel="nofollow" href="https://github.com/ramkumar-kr/">
+        Github
+      </a>
+    </li>
+    <li>
+      <a rel="nofollow" href="https://chrome.google.com/webstore/search/Ramkumar%20K%20R?_category=extensions">
+        Chrome extensions
+      </a>
+    </li>
+    <li>
+      <a rel="nofollow" href="https://addons.mozilla.org/en-US/firefox/user/11762596/">
+        Firefox Webextensions
+      </a>
+    </li>
+  </ul>
 </div>

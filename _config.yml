@@ -27,7 +27,7 @@ highlighter: 'rouge'
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: minima
 include: ["_pages"]
 collections:
   showcases:
@@ -35,4 +35,4 @@ collections:
 
 plugins:
   - jekyll-sitemap
-    
+
