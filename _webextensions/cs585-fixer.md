@@ -13,4 +13,4 @@ If you are annoyed by the small images and blank pages when saving the lecture p
 ## How to Use
 After installing the addon, go to any lecture page and click on the printer icon which is automatically displayed to the right of the URL bar (just before the bookmark icon in the URL bar). You will be shown a PDF preview of the page.
 
-## [Download](/xpi/cs585_website_fixer-1.0.2-fx.xpi)
+## [Download for Firefox](/xpi/cs585_website_fixer-1.0.2-fx.xpi)

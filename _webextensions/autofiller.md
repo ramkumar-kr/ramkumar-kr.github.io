@@ -11,4 +11,4 @@ If you are tired of filling the same thing multiple times (For example, linkedin
 
 By going to the preferences page, you can edit the menu to add or remove whatever suits you best.
 
-## [Download](/xpi/autofiller-1.0.1-fx.xpi)
+## [Download for Firefox](/xpi/autofiller-1.0.1-fx.xpi)

@@ -9,4 +9,4 @@ description: Print with a preview
 
 Firefox's default print currently does not display a preview of the pages being printed. Click on the extension icon to display a preview of the webpage about to be printed.
 
-## [Download](/xpi/print_with_preview-1.0.0-fx.xpi)
+## [Download for Firefox](/xpi/print_with_preview-1.0.0-fx.xpi)
