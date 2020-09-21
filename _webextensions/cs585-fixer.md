@@ -5,8 +5,6 @@ permalink: "/webextensions/cs585-website-fixer"
 description: Download lectures as PDF
 ---
 
-# CS-585 Fixer
-
 For CSCI-585 students only. Have good looking PDFs when printing the cs585 lectures page.
 If you are annoyed by the small images and blank pages when saving the lecture page to PDF, this extension is for you.
 
