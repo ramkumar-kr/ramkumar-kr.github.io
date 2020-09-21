@@ -1,0 +1,27 @@
+---
+layout: page
+permalink: "/webextensions/"
+---
+
+  <h1 class="post-title"> Webextensions </h1>
+  <p>Below is a list of webextensions developed by me.</p>
+  <div id="webextensions">
+    <ul class="post-list">
+      {% for post in site.webextensions %}
+        <li class="post">
+          <h2>
+            {%- if post.permalink -%}
+            <a class="post-link" href="{{ post.permalink }}">{{ post.title }}</a>
+            {%- endif -%}
+            {%- if post.link -%}
+            <a class="post-link" href="{{ post.link }}">{{ post.title }}</a>
+            {%- endif -%}
+          </h2>
+          <span class="post-meta">{{ post.description }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p>You can view more of my extensions in <a href="https://chrome.google.com/webstore/search/Ramkumar%20K%20R?_category=extensions">Chrome webstore</a> or <a href="https://addons.mozilla.org/en-US/firefox/user/11762596/">Firefox AMO</a></p>
+  </div>
+
